@@ -1,6 +1,6 @@
 <?php
 
-namespace Stool\UsefulToolsBundle\DependencyInjection;
+namespace Wikimart\UsefulToolsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode    = $treeBuilder->root('stool_useful_tools');
+        $rootNode    = $treeBuilder->root('wikimart_useful_tools');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

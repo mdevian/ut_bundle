@@ -6,7 +6,7 @@
  * Time: 13:53
  */
 
-namespace Stool\UsefulToolsBundle\Configurator;
+namespace Wikimart\UsefulToolsBundle\Configurator;
 
 
 class TmpConfigurator

@@ -1,6 +1,6 @@
 services:
     wm_ut.tmp_configurator:
-        class: Stool\UsefulToolsBundle\Configurator\TmpConfigurator
+        class: Wikimart\UsefulToolsBundle\Configurator\TmpConfigurator
         arguments: []
     wm_ut.array:
         class: Wikimart\UsefulTools\Helper\ArrayHelper
