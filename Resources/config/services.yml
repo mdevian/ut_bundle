@@ -1,58 +1,58 @@
 services:
-    stool_ut.tmp_configurator:
+    wm_ut.tmp_configurator:
         class: Stool\UsefulToolsBundle\Configurator\TmpConfigurator
         arguments: []
-    stool_ut.array:
+    wm_ut.array:
         class: Wikimart\UsefulTools\Helper\ArrayHelper
         arguments: []
-    stool_ut.cmd:
+    wm_ut.cmd:
         class: Wikimart\UsefulTools\Helper\CmdHelper
         arguments: []
-    stool_ut.csv:
+    wm_ut.csv:
         class: Wikimart\UsefulTools\Helper\CsvHelper
-        arguments: [@stool_ut.text, @stool_ut.tmp]
-    stool_ut.date:
+        arguments: [@wm_ut.text, @wm_ut.tmp]
+    wm_ut.date:
         class: Wikimart\UsefulTools\Helper\DateHelper
         arguments: []
-    stool_ut.dir:
+    wm_ut.dir:
         class: Wikimart\UsefulTools\Helper\DirHelper
         arguments: []
-    stool_ut.file:
+    wm_ut.file:
         class: Wikimart\UsefulTools\Helper\FileHelper
-        arguments: [@stool_ut.cmd, @stool_ut.tmp, @stool_ut.dir]
-    stool_ut.html:
+        arguments: [@wm_ut.cmd, @wm_ut.tmp, @wm_ut.dir]
+    wm_ut.html:
         class: Wikimart\UsefulTools\Helper\HtmlHelper
         arguments: []
-    stool_ut.json:
+    wm_ut.json:
         class: Wikimart\UsefulTools\Helper\JsonHelper
         arguments: []
-    stool_ut.text:
+    wm_ut.text:
         class: Wikimart\UsefulTools\Helper\TextHelper
         arguments: []
-    stool_ut.tmp:
+    wm_ut.tmp:
         class: Wikimart\UsefulTools\Helper\TmpHelper
-        arguments: [@=service('stool_ut.tmp_configurator').getTmpDir()]
-    stool_ut.url:
+        arguments: [@=service('wm_ut.tmp_configurator').getTmpDir()]
+    wm_ut.url:
         class: Wikimart\UsefulTools\Helper\UrlHelper
-        arguments: [@stool_ut.text]
-    stool_ut.xpath:
+        arguments: [@wm_ut.text]
+    wm_ut.xpath:
         class: Wikimart\UsefulTools\Helper\XPathHelper
         arguments: []
-    stool_ut.domain:
+    wm_ut.domain:
         class: Wikimart\UsefulTools\Helper\DomainHelper
-        arguments: [@stool_ut.url, @stool_ut.text]
-    stool_ut.email:
+        arguments: [@wm_ut.url, @wm_ut.text]
+    wm_ut.email:
         class: Wikimart\UsefulTools\Helper\EmailHelper
         arguments: []
-    stool_ut.query:
+    wm_ut.query:
         class: Wikimart\UsefulTools\Helper\QueryHelper
         arguments: []
-    stool_ut.socket_addresses:
+    wm_ut.socket_addresses:
         class: Wikimart\UsefulTools\Helper\SocketAddressesHelper
         arguments: []
-    stool_ut.content:
+    wm_ut.content:
         class: Wikimart\UsefulTools\Helper\ContentHelper
-        arguments: [@stool_ut.file, @stool_ut.tmp, @stool_ut.text]
-    stool_ut.db:
+        arguments: [@wm_ut.file, @wm_ut.tmp, @wm_ut.text]
+    wm_ut.db:
         class: Wikimart\UsefulTools\Helper\DBHelper
         arguments: ['Pgsql'] # Pgsql, Mysql
