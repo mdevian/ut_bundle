@@ -1,0 +1,18 @@
+{
+    "name":"wikimart/ut-bundle",
+    "version":"1.0.0",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/mdevian/useful_tools.git"
+        }
+    ],
+    "require":{
+        "php":">=5.3.0",
+        "wikimart/useful_tools": "dev-master",
+        "symfony/framework-bundle": "~2.2"
+    },
+    "autoload": {
+        "psr-4": { "Wikimart\\UsefulToolsBundle\\": "" }
+    }
+}
