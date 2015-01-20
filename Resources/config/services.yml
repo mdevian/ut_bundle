@@ -38,9 +38,9 @@ services:
     wm_ut.xpath:
         class: Wikimart\UsefulTools\Helper\XPathHelper
         arguments: []
-    wm_ut.domain:
-        class: Wikimart\UsefulTools\Helper\DomainHelper
-        arguments: [@wm_ut.url, @wm_ut.text]
+    wm_ut.host:
+        class: Wikimart\UsefulTools\Helper\HostHelper
+        arguments: [@wm_ut.text, @wm_ut.url]
     wm_ut.email:
         class: Wikimart\UsefulTools\Helper\EmailHelper
         arguments: []
@@ -50,9 +50,6 @@ services:
     wm_ut.socket_addresses:
         class: Wikimart\UsefulTools\Helper\SocketAddressesHelper
         arguments: []
-    wm_ut.content:
-        class: Wikimart\UsefulTools\Helper\ContentHelper
-        arguments: [@wm_ut.file, @wm_ut.tmp, @wm_ut.text]
     wm_ut.db:
         class: Wikimart\UsefulTools\Helper\DBHelper
         arguments: ['Pgsql'] # Pgsql, Mysql
